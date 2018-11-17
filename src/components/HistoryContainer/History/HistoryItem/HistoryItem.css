@@ -1,0 +1,58 @@
+.history-item {
+    width: 290px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 30px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    color: #636e72;
+    letter-spacing: 1px;
+}
+
+.history-item span {
+    padding: 2px 0;
+}
+
+.history-item > span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.history-item > span:last-child{
+    width: 100%;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history-item button {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.history-item button:hover {
+    text-decoration: underline;
+}
+
+.history-item button.button-delete {
+    color: #c0392b;
+}
+
+.history-item button.button-details {
+    color: #2980b9;
+}
+
+.history-item svg {
+    position: relative;
+    top: -2px;
+    right: -2px;
+}

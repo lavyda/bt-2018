@@ -1,0 +1,28 @@
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.header-nav a.is-active {
+    font-weight: bold;
+}
+
+.header-nav a {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2c3e50;
+    letter-spacing: 4px;
+}
+
+.header-nav a:hover,
+.header-nav a:active,
+.header-nav a:focus {
+    cursor: pointer;
+    font-weight: bold;
+}

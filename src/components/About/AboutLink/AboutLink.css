@@ -1,0 +1,9 @@
+.about-link {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}

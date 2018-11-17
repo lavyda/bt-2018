@@ -1,0 +1,37 @@
+.results-title {
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-top: 1px solid #bdc3c7;
+}
+.results-suggestions .results-title {
+    color: #3498db;
+}
+
+.results-warnings .results-title {
+    color: #e74c3c;
+}
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-list span {
+    padding: 10px 30px;
+    font-size: 17px;
+    color: #34495e
+}
+
+.results-list span svg {
+    margin-right: 10px;
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+.results-list-hidden {
+    display: none;
+    }

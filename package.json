@@ -1,0 +1,67 @@
+{
+  "name": "lynis-gui",
+  "version": "1.0.0",
+  "description": "GUI for Lynis system auditing tool. Application is part of the bachelor thesis.",
+  "author": {
+    "name": "Vladimír Kovalský",
+    "email": "vladimir.kovalsky@student.tuke.sk"
+  },
+  "contributors": [
+    {
+      "name": "Jana Šťastná",
+      "email": "jana.stastna@tuke.sk"
+    }
+  ],
+  "private": true,
+  "dependencies": {
+    "getos": "^3.1.0",
+    "history": "^4.7.2",
+    "moment": "^2.20.1",
+    "prop-types": "^15.6.0",
+    "rc-tooltip": "^3.7.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-easy-chart": "^1.0.0",
+    "react-icons": "^2.2.7",
+    "react-loading-animation": "^1.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1",
+    "recharts": "^1.0.0-beta.10",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000/ electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "sk.tuke.fei.lynis-gui",
+    "productName": "Lynis GUI",
+    "extraResources": [
+      {
+        "from": "src/resources/assets/scripts/pl/lynis-report-converter.pl",
+        "to": "lynis-report-converter.pl"
+      }
+    ],
+    "linux": {
+      "target": [
+        "zip"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^1.8.3",
+    "electron-builder": "^20.4.1",
+    "electron-prebuilt-compile": "^1.7.11"
+  },
+  "license": "GPL-3.0"
+}

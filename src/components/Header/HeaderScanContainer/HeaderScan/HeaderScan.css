@@ -1,0 +1,44 @@
+.header-scan {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.header-scan .scan-available,
+.header-scan .scan-unavailable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.header-scan .scan-available .scan-no-progress button {
+    width: 170px;
+    height: 75px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #ffffff;
+    background-color: #27ae60;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+.header-scan .scan-available .scan-no-progress button:hover,
+.header-scan .scan-available .scan-no-progress button:active {
+    background-color: #2ecc71;
+    cursor: pointer;
+}
+
+.header-scan .scan-unavailable {
+    font-size: 16px;
+    color: #c0392b;
+}
+
+.header-scan .scan-available .scan-in-progress div {
+    position: relative;
+    left: 60px;
+    bottom: 10px;
+}

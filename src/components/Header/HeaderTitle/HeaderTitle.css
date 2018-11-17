@@ -1,0 +1,19 @@
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.header-title span:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-bottom: 4px;
+}
+
+.header-title span:not(:first-child) {
+    font-size: 23px;
+    color: #7f8c8d;
+    letter-spacing: 5px;
+}
